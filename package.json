@@ -1,0 +1,24 @@
+{
+  "name": "gb",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "up": "docker-compose -f tools/docker/docker-compose.yml up",
+    "start": "export APPS=guestbook&&npm start --prefix=./tools/builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalyuk/gb.git"
+  },
+  "author": "Dmitriy Kalyuk <kalyukdo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kalyuk/gb/issues"
+  },
+  "homepage": "https://github.com/kalyuk/gb#readme",
+  "workspaces": [
+    "./apps/*",
+    "./libs/*",
+    "./tools/*"
+  ]
+}

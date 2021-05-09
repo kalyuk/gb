@@ -1,0 +1,9 @@
+version: "3.8"
+services: 
+    gb-project:
+        container_name: gb-project
+        build: 
+            context: ../../
+            dockerfile: ./tools/docker/node.dockerfile
+        volumes: 
+            - $PWD:/mnt/project
